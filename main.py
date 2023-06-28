@@ -244,4 +244,4 @@ def handle_fileSysytem(d):
     downloadedFiles.append(downloadedFilesDict)
   emit("downloadedFiles",{"files":downloadedFiles})
 
-socketio.run(app, host='0.0.0.0', port=81, debug=False)
+socketio.run(app, host='0.0.0.0', port=81, debug=False,allow_unsafe_werkzeug=True)

@@ -13,7 +13,6 @@ eventlet = "0.33.3"
 
 [tool.poetry.dev-dependencies]
 debugpy = "^1.6.2"
-replit-python-lsp-server = {extras = ["yapf", "rope", "pyflakes"], version = "^1.5.9"}
 toml = "^0.10.2"
 
 [build-system]

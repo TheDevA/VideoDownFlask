@@ -36,7 +36,7 @@ let socket = io();
 
 socket.on("connect",()=>{
   socket.emit("NeedData",{})
-  // setInterval(()=>socket.emit("NeedData",{}),500)
+  setInterval(()=>socket.emit("NeedData",{}),1000)
   console.log("connected")
   // if (urlParams.has("url") && urlParams.has("format") && urlParams.has("ext")) {
   //   url = urlParams.get("url")
